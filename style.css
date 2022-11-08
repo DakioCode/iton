@@ -47,3 +47,11 @@ input[type=submit]:hover {
     color: #0084ff;
     border: 1px solid #0084ff;
 }
+a{
+    color: black;
+    transition: .3s;
+}
+a:hover{
+    color: #0084ff;
+    font-size: 20px;
+}
