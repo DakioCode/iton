@@ -1,22 +1,27 @@
 <!DOCTYPE html>
+<!-- <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Logo d'Iton" id="logo"> -->
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iton - New modern Social Network</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <div id="container">
+ 
+            <form action="verification.php" method="POST">
+                <h1>Connexion</h1>
+ 
+                <label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iton - New modern Social Network</title>
-</head>
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
-<body>
-    <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Logo d'Iton" id="logo">
-    <div id="content">
-        <form action="" method="post">
-            <input type="email" placeholder="Adresse-mail">
-            <input type="password" placeholder="Mot-de-passe">
-            <input type="submit" value="Connexion">
-        </form>
-    </div>
-</body>
-
+                <input type="submit" id='submit' value='Connexion' >
+            </form>
+        </div>
+    </body>
 </html>
