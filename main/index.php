@@ -8,33 +8,37 @@
     </head>
     <body>
         <nav>
-            <div class="onglets">
+            <div class="onglets nav-item">
                 <a href="/main/">Accueil</a>
+                <div class="separation"></div>
                 <a href="/redact/">Nouveau</a>
+                <div class="separation"></div>
+                <a href="">Test</a>
             </div>
-            <div class="account">
+            <div class="account nav-item">
                 <a href="/account/">Mon compte</a>
+                <div class="separation"></div>
                 <a href="/logout.php">Logout</a>
             </div>
         </nav>
 
         <section class="cards">
-            <div class="cardg">
+            <div class="card cardg">
                 <h1>[TITRE]</h1>
                 <p class="content">[CONTENT]</p>
                 <p class="author">[AUTHOR]</p>
             </div>
-            <div class="cardd">
+            <div class="card cardd">
                 <h1>[TITRE]</h1>
                 <p class="content">[CONTENT]</p>
                 <p class="author">[AUTHOR]</p>
             </div>
-            <div class="cardg">
+            <div class="card cardg">
                 <h1>[TITRE]</h1>
                 <p class="content">[CONTENT]</p>
                 <p class="author">[AUTHOR]</p>
             </div>
-            <div class="cardd">
+            <div class="card cardd">
                 <h1>[TITRE]</h1>
                 <p class="content">[CONTENT]</p>
                 <p class="author">[AUTHOR]</p>
