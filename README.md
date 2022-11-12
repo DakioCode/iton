@@ -5,6 +5,8 @@
 
 - [@DakioCode](https://www.github.com/DakioCode) - Founder
 - [@DankBroom](https://www.github.com/DankBroom) - Developer
+- [@thibtha](https://www.github.com/thibtha)     - Developer
+
 ## Contributing
 
 To contribute the project, please read [`contributing.md`]("https://github.com/DakioCode/Iton/blob/main/contributing.md").

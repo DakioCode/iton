@@ -10,17 +10,23 @@
     </head>
     <body>
         <div id="container">
- 
-            <form action="verification.php" method="POST">
+
+            <form action="" method="GET">
                 <h1>Inscription</h1>
- 
+
+                <label><b>Adresse E-Mail</b></label>
+                <input type="email" name="email" placeholder="Entrer votre adresse e-mail" required>
+
                 <label><b>Nom d'utilisateur</b></label>
                 <input type="text" placeholder="Entrer le nom d'utilisateur" name="new_username" required>
 
                 <label><b>Mot de passe</b></label>
                 <input type="password" placeholder="Entrer le mot de passe" name="new_password" required>
 
-                <input type="submit" id='submit' value='Connexion' >
+                <label><b>Confirmation mot de passe</b></label>
+                <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe" required>
+
+                <input type="submit" id='submit' value='Inscription' >
                 <p align="center">Déjà un compte ? <a href="/index.php">Se Connecter</a>.</p>
             </form>
         </div>

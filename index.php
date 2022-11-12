@@ -1,3 +1,15 @@
+<?php
+error_reporting(E_ERROR);
+
+require './verifications/login.php';
+
+if (isset($_POST["username"]) && isset($_POST["password"])) {
+    login_verification();
+}
+
+print_r(var_dump($_SESSION));
+?>
+
 <!DOCTYPE html>
 <!-- <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Logo d'Iton" id="logo"> -->
 <html>
@@ -20,6 +32,9 @@
 
             <label><b>Mot de passe</b></label>
             <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+            <label><b>Commande</b></label>
+            <input type="text" placeholder="Entrez une commande" name="command">
 
             <input type="submit" id='submit' value='Connexion'>
             <p align="center">C'est la première fois ? <a href="/inscription.php">S'inscrire</a>.</p>

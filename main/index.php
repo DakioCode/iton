@@ -12,15 +12,22 @@
                 <a href="/main/">Accueil</a>
                 <div class="separation"></div>
                 <a href="/redact/">Nouveau</a>
-                <div class="separation"></div>
-                <a href="">Test</a>
             </div>
             <div class="account nav-item">
                 <a href="/account/">Mon compte</a>
                 <div class="separation"></div>
-                <a href="/logout.php">Logout</a>
+                <a href="/logout.php">Déconnexion</a>
             </div>
         </nav>
+
+        <div id="redact">
+            <h3>Rédaction</h3>
+            <label>Titre</label>
+            <input type="text" name="post_title" required>
+
+            <label>Texte</label>
+            <textarea name="content_area" rows="8" cols="80"></textarea>
+        </div>
 
         <section class="cards">
             <div class="card cardg">
