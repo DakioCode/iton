@@ -1,11 +1,13 @@
 <?php
+// Error reporting + session
 error_reporting(E_ERROR);
+session_start();
 
-require './verifications/login.php';
+require 'src/verifications/login.php';
 
-if (isset($_POST["username"]) && isset($_POST["password"])) {
+if (isset($_POST["username"])) {
     login_verification();
-}
+};
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +20,10 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iton - New modern Social Network</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4d19b4a050.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
