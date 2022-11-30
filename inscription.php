@@ -58,7 +58,7 @@ if (isset($_POST["email"])) {
             <label><b>Confirmation mot de passe</b></label>
             <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe" required>
 
-            <input type="submit" id='submit' value='Inscription'>
+            <button type="submit">Connexion</button>
             <p align="center">Déjà un compte ? <a href="/index.php">Se Connecter</a>.</p>
         </form>
     </div>

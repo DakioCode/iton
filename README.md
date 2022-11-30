@@ -6,6 +6,9 @@
 - [@DakioCode](https://www.github.com/DakioCode) - Founder
 - [@DankBroom](https://www.github.com/DankBroom) - Developer
 - [@thibtha](https://www.github.com/thibtha)     - Developer
+- [@4Mathleu](https://www.github.com/4Mathleu)   - Artistic director
+- [@Frechoss]                                    - Web designer
+- [@Valentus]                                    - Communication manager
 
 ## Contributing
 
