@@ -1,76 +1,257 @@
-body {
-    /* height: 100%; */
-    background: rgb(44, 241, 122);
-    background: radial-gradient(circle, rgba(44, 241, 122, 1) 0%, rgba(30, 128, 196, 1) 100%);
+/* Responsive for mobile */
+@media only screen and (max-width:399px){
+    body {
+        /* height: 100%; */
+        background: rgba(30, 128, 196, 1);
+    }
+    
+    /* banner */
+    #banner{
+        width: 100%;
+    }
+    
+    #container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Bordered form */
+    form {
+        width: 80%;
+        height: 80%;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .4);
+        border: 1px solid #f1f1f1;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        margin: 0 auto;
+    }
+    
+    #container h1 {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    
+    /* Full-width inputs */
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, .65);
+        outline: none;
+        transition: .3s;
+    }
+    
+    input:hover {
+        border: 1px solid #0084ff;
+        background-color: rgba(255, 255, 255, .8);
+    }
+    
+    /* Set a style for all buttons */
+    button[type=submit] {
+        background-color: transparent;
+        color: #0084ff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 1px #0084ff solid;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        transition: .3s
+    }
+    
+    button[type=submit]:hover {
+        background-color: #0084ff;
+        color: white;
+        border: 1px solid #0084ff;
+    }
+    
+    a {
+        color: black;
+        transition: .4s;
+    }
+    
+    a:hover {
+        color: #0084ff;
+        /* font-size: 20px; */
+    }
 }
 
-#container {
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 10%;
+/* Responsive for tablet */
+@media only screen and (min-width:400px) and (max-width:768px){
+    body {
+        /* height: 100%; */
+        background: rgb(44, 241, 122);
+        background: radial-gradient(circle, rgba(44, 241, 122, 1) 0%, rgba(30, 128, 196, 1) 100%);
+    }
+    
+    /* banner */
+    #banner{
+        height: 100%;
+    }
+    
+    #container {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Bordered form */
+    form {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .4);
+        border: 1px solid #f1f1f1;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        margin: 0 auto;
+    }
+    
+    #container h1 {
+        width: 38%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    
+    /* Full-width inputs */
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, .65);
+        outline: none;
+        transition: .3s;
+    }
+    
+    input:hover {
+        border: 1px solid #0084ff;
+        background-color: rgba(255, 255, 255, .8);
+    }
+    
+    /* Set a style for all buttons */
+    button[type=submit] {
+        background-color: transparent;
+        color: #0084ff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 1px #0084ff solid;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        transition: .3s
+    }
+    
+    button[type=submit]:hover {
+        background-color: #0084ff;
+        color: white;
+        border: 1px solid #0084ff;
+    }
+    
+    a {
+        color: black;
+        transition: .4s;
+    }
+    
+    a:hover {
+        color: #0084ff;
+        /* font-size: 20px; */
+    }
 }
 
-/* Bordered form */
-form {
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, .4);
-    border: 1px solid #f1f1f1;
-    border-radius: 15px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-#container h1 {
-    width: 38%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-}
-
-/* Full-width inputs */
-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, .65);
-    outline: none;
-    transition: .3s;
-}
-
-input:hover {
-    border: 1px solid #0084ff;
-    background-color: rgba(255, 255, 255, .8);
-}
-
-/* Set a style for all buttons */
-button[type=submit] {
-    background-color: transparent;
-    color: #0084ff;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 1px #0084ff solid;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
-    transition: .3s
-}
-
-button[type=submit]:hover {
-    background-color: #0084ff;
-    color: white;
-    border: 1px solid #0084ff;
-}
-
-a {
-    color: black;
-    transition: .4s;
-}
-
-a:hover {
-    color: #0084ff;
-    /* font-size: 20px; */
+/* Responsive for desktop */
+@media only screen and (min-width:769px){
+    body {
+        /* height: 100%; */
+        background: rgb(44, 241, 122);
+        background: radial-gradient(circle, rgba(44, 241, 122, 1) 0%, rgba(30, 128, 196, 1) 100%);
+        /* flex display for the banner : */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    /* banner */
+    #banner{
+        height: 300px;
+        align-self: center;
+    }
+    
+    #container {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    
+    /* Bordered form */
+    form {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .4);
+        border: 1px solid #f1f1f1;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    
+    #container h1 {
+        width: 38%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    
+    /* Full-width inputs */
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, .65);
+        outline: none;
+        transition: .3s;
+    }
+    
+    input:hover {
+        border: 1px solid #0084ff;
+        background-color: rgba(255, 255, 255, .8);
+    }
+    
+    /* Set a style for all buttons */
+    button[type=submit] {
+        background-color: transparent;
+        color: #0084ff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 1px #0084ff solid;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        transition: .3s
+    }
+    
+    button[type=submit]:hover {
+        background-color: #0084ff;
+        color: white;
+        border: 1px solid #0084ff;
+    }
+    
+    a {
+        color: black;
+        transition: .4s;
+    }
+    
+    a:hover {
+        color: #0084ff;
+        /* font-size: 20px; */
+    }
 }

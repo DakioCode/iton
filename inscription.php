@@ -5,7 +5,7 @@ session_start();
 
 $db = new PDO("mysql:host=localhost;dbname=iton;charset=utf8", "root", "root");
 
-require 'src/verifications/inscription.php';
+require 'verifications/inscription.php';
 
 $verification = inscription_verification();
 
@@ -29,18 +29,19 @@ if (isset($_POST["email"])) {
 ?>
 
 <!DOCTYPE html>
-<!-- <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Logo d'Iton" id="logo"> -->
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/logo.png">
     <title>Iton - New modern Social Network</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
 <body>
+    <img src="/assets/logo_ban.png" id="banner">
     <div id="container">
 
         <form action="" method="POST">
@@ -58,7 +59,7 @@ if (isset($_POST["email"])) {
             <label><b>Confirmation mot de passe</b></label>
             <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe" required>
 
-            <button type="submit">Connexion</button>
+            <button type="submit">S'inscrire</button>
             <p align="center">Déjà un compte ? <a href="/index.php">Se Connecter</a>.</p>
         </form>
     </div>
