@@ -1,5 +1,5 @@
 /* Responsive for mobile */
-@media only screen and (max-width:399px){
+@media only screen and (max-width:419px){
     body {
         /* height: 100%; */
         background: rgba(30, 128, 196, 1);
@@ -83,7 +83,7 @@
 }
 
 /* Responsive for tablet */
-@media only screen and (min-width:400px) and (max-width:768px){
+@media only screen and (min-width:420px) and (max-width:849px){
     body {
         /* height: 100%; */
         background: rgb(44, 241, 122);
@@ -168,7 +168,7 @@
 }
 
 /* Responsive for desktop */
-@media only screen and (min-width:769px){
+@media only screen and (min-width:850px){
     body {
         /* height: 100%; */
         background: rgb(44, 241, 122);

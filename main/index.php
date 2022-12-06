@@ -26,10 +26,12 @@ if (!isset($_SESSION["username"])) header("Location:/index.php");
     <link rel="icon" type="image/png" href="/assets/logo.png">
     <title>Iton - New modern Social Network</title>
     <link rel="stylesheet" type="text/css" href="/main/style.css">
+    <script src="/main/script.js" defer></script>
 </head>
 
 <body>
-    <nav>
+    <!-- Desktop navbar -->
+    <nav class="desktop">
         <div class="onglets nav-item">
             <a href="/main/">Accueil</a>
             <div class="separation"></div>
@@ -42,6 +44,24 @@ if (!isset($_SESSION["username"])) header("Location:/index.php");
         </div>
     </nav>
 
+    <!-- Mobile and tablet navbar -->
+    <div class="container">
+        <img src="/assets/logo.png" class="mobile-logo">
+        <img src="/assets/logo_ban.png" class="tablet-logo">
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="/main/">Accueil</a></li>
+                <li><a href="/redact/">Nouveau</a></li>
+                <li><a href="/account/">Mon compte</a></li>
+                <li><a href="#logout">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Post viewer -->
     <section class="cards">
         <?php
 
@@ -50,7 +70,7 @@ if (!isset($_SESSION["username"])) header("Location:/index.php");
         $fetch = $query->fetchAll();
 
         foreach ($fetch as $result) {
-        ?> <div class="card cardg">
+        ?> <div class="card">
                 <h1><?= $result["title"] ?></h1>
                 <p class="content"><?= $result["content"] ?></p>
                 <p class="author"><?= $result["author"] ?></p>
@@ -58,27 +78,6 @@ if (!isset($_SESSION["username"])) header("Location:/index.php");
                 }
 
                     ?>
-
-        <!-- <div class="card cardg">
-            <h1>[TITRE]</h1>
-            <p class="content">[CONTENT]</p>
-            <p class="author">[AUTHOR]</p>
-        </div>
-        <div class="card cardd">
-            <h1>[TITRE]</h1>
-            <p class="content">[CONTENT]</p>
-            <p class="author">[AUTHOR]</p>
-        </div>
-        <div class="card cardg">
-            <h1>[TITRE]</h1>
-            <p class="content">[CONTENT]</p>
-            <p class="author">[AUTHOR]</p>
-        </div>
-        <div class="card cardd">
-            <h1>[TITRE]</h1>
-            <p class="content">[CONTENT]</p>
-            <p class="author">[AUTHOR]</p>
-        </div> -->
     </section>
 </body>
 
