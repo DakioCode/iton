@@ -30,39 +30,37 @@ if (isset($_POST["email"])) {
 
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/assets/logo.png">
+        <title>Iton - New modern Social Network</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/logo.png">
-    <title>Iton - New modern Social Network</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-</head>
+    <body>
+        <img src="/assets/logo_ban.png" id="banner">
+        <div id="container">
 
-<body>
-    <img src="/assets/logo_ban.png" id="banner">
-    <div id="container">
+            <form action="" method="POST">
+                <h1>Inscription</h1>
 
-        <form action="" method="POST">
-            <h1>Inscription</h1>
+                <label><b>Adresse E-Mail</b></label>
+                <input type="email" name="email" placeholder="Entrer votre adresse e-mail" required>
 
-            <label><b>Adresse E-Mail</b></label>
-            <input type="email" name="email" placeholder="Entrer votre adresse e-mail" required>
+                <label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
 
-            <label><b>Nom d'utilisateur</b></label>
-            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
-            <label><b>Mot de passe</b></label>
-            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <label><b>Confirmation mot de passe</b></label>
+                <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe" required>
 
-            <label><b>Confirmation mot de passe</b></label>
-            <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe" required>
-
-            <button type="submit">S'inscrire</button>
-            <p align="center">Déjà un compte ? <a href="/index.php">Se Connecter</a>.</p>
-        </form>
-    </div>
-</body>
-
+                <button type="submit">S'inscrire</button>
+                <p align="center">Déjà un compte ? <a href="/index.php">Se Connecter</a>.</p>
+            </form>
+        </div>
+    </body>
 </html>
